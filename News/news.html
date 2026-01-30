@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../web.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../recipes/recipes.html">Pets</a>
+        <a href="../about/about.html"> Video</a>
+        <a href="../Contact Us/contact.html">Contact Us</a>
+        News
+     
+    </nav>
+   <!-- Veterinary Clinic News Section with Read More Toggle -->
+<section id="news" style="padding: 50px; background-color: #f4f9f7;">
+  <h2 style="text-align: center; font-family: Arial, sans-serif;">Latest News</h2>
+  <p style="text-align: center; max-width: 700px; margin: 10px auto 40px auto; font-family: Arial, sans-serif;">
+    Stay updated with our clinic news, health tips, events, and success stories to keep your pets happy and healthy.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+    <!-- News Card Example 1 -->
+    <div style="flex: 1 1 300px; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; font-family: Arial, sans-serif;">
+      <img src="../images/petVaccination.png" alt="Pet Vaccination" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <h3 style="margin-top: 0;">Vaccination Awareness</h3>
+        <p>
+          Keep your pets healthy with regular vaccinations. 
+          <span id="dots1">...</span>
+          <span id="more1" style="display:none;">
+            Vaccinations protect against rabies, distemper, parvovirus, and other serious diseases. Consult our vets to schedule your pet’s vaccination today!
+          </span>
+        </p>
+        <button onclick="readMore(1)" style="color: #007BFF; border: none; background: none; cursor: pointer; font-weight: bold;">Read More →</button>
+      </div>
+    </div>
+
+    <!-- News Card Example 2 -->
+    <div style="flex: 1 1 300px; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; font-family: Arial, sans-serif;">
+      <img src="../images/petDentalCare.png" alt="Pet Dental Care" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <h3>Pet Dental Health Month</h3>
+        <p>
+          February is dental health month for pets. 
+          <span id="dots2">...</span>
+          <span id="more2" style="display:none;">
+            Dental care prevents gum disease, tooth loss, and bad breath. Learn proper brushing techniques and schedule a dental checkup with our clinic.
+          </span>
+        </p>
+        <button onclick="readMore(2)" style="color: #007BFF; border: none; background: none; cursor: pointer; font-weight: bold;">Read More →</button>
+      </div>
+    </div>
+
+    <!-- News Card Example 3 -->
+    <div style="flex: 1 1 300px; max-width: 300px; background-color: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; font-family: Arial, sans-serif;">
+      <img src="../images/petAdoptionEvent.png" alt="Pet Adoption Event" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 15px;">
+        <h3>Adoption Event This Weekend</h3>
+        <p>
+          Join us for our community pet adoption event. 
+          <span id="dots3">...</span>
+          <span id="more3" style="display:none;">
+            Local rescue pets will be available for adoption. Free checkups and fun activities for families. Bring your loved ones and find a new furry friend!
+          </span>
+        </p>
+        <button onclick="readMore(3)" style="color: #007BFF; border: none; background: none; cursor: pointer; font-weight: bold;">Read More →</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- JavaScript for Read More -->
+<script>
+function readMore(id) {
+  const dots = document.getElementById(`dots${id}`);
+  const moreText = document.getElementById(`more${id}`);
+  const btn = event.target;
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    dots.style.display = "none";
+    btn.textContent = "Read Less ←";
+  } else {
+    moreText.style.display = "none";
+    dots.style.display = "inline";
+    btn.textContent = "Read More →";
+  }
+}
+</script>
+
+</body>
+</html>

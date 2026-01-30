@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-g">
+    <title>MOON</title>
+    <link rel="stylesheet" href="../web.css">
+</head>
+
+<body>
+    <div class="box">
+        <header class="head">
+            <img src="../images/blackgoose.png" alt="Blackgoose" width="30" height="30">
+            <h1 class="card"><b>LAURI'S CLINIC</b></h1>
+        </header>
+        <nav>Follow us on <br>
+            <a href="*">Youtube</a><a href="*">Tiktok</a><a href="*">Facebook</a><a href="*">Instagram</a>
+        </nav>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../recipes/recipes.html">Pets</a>
+            video
+            <a href="../Contact Us/contact.html">Contact Us</a>
+            <a href="../News/news.html">News</a>
+        </nav>
+    </div>
+    <video width="200" controls>
+        <source src="../videos/‎Chike.mp4">
+    </video>
+    <video width="200" controls>
+        <source src="../videos/‎ED‎.mp4">
+    </video>
+    <video width="200" controls>
+        <source src="../videos/‎Full.mp4">
+    </video>
+    <video width="200" controls>
+        <source src="../videos/‎it's.mp4">
+    </video>
+    <video width="200" controls>
+        <source src="../videos/‎Replyx.mp4">
+    </video>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach(video => {
+    video.addEventListener("play", function () {
+      videos.forEach(v => {
+        if (v !== video) {
+          v.pause();
+        }
+      });
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>
