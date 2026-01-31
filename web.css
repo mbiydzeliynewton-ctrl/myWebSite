@@ -79,13 +79,10 @@
             html{
                 font-size: 20px;
             }
-            nav{
-                font-size: 20px;
-            }
-            h2{
+            h1,h2,h3{
                 font-size: 3rem;
             }
-            p{
+            p,span,li,button,a,nav{
                 font-size: 1.5rem;
             }
         }
