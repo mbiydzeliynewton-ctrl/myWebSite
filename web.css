@@ -16,7 +16,7 @@
             /* Vertically centers the items */
             gap: 10px;
             /* Space between image and text */
-            background-color: #333;
+            background-image: url(images/moon.png);
             color: white;
             padding: 10px;
         }
@@ -29,13 +29,14 @@
         }
 
         nav {
-            padding: 50px;
+            padding: 10px;
             font-size: 30px;
             background-image: url(images/space.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: blue;
+            border-radius: 30px;
         }
 
         nav a {
