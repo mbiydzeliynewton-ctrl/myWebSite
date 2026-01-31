@@ -29,19 +29,19 @@
         }
 
         nav {
-            padding: 10px;
+            padding: 20px;
             font-size: 30px;
             background-image: url(images/space.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: blue;
-            border-radius: 30px;
+            border-radius: 90px;
         }
 
         nav a {
             color: white;
-            margin-right: 30px;
+            margin-right: 10px;
             text-decoration: none;
         }
 
@@ -79,10 +79,15 @@
         }
 
         .box {
-            border: 1px solid #ccc;
+            border: 1px solid red;
             padding: 20px;
             border-radius: 30px;
             background: #fafafa;
+        }
+
+        .box {
+            border: 2px solid red;
+            padding: 20px;
         }
 
         .discount-section {
