@@ -3,6 +3,10 @@
             margin: 0;
             padding: 20;
             font-size: 16px;
+            background-image: url(images/moon.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         header {
@@ -25,9 +29,13 @@
         }
 
         nav {
-            background-color: red;
-            padding: 20px;
+            padding: 50px;
             font-size: 30px;
+            background-image: url(images/space.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: blue;
         }
 
         nav a {
