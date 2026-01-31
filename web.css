@@ -75,10 +75,10 @@
         }
        @media(max-width: 600px){
          html{
-            font-size: clamp(16px,2.5vw,22px);
+            font-size: clamp(20px,3vw,24px);
         }
         nav a{
-            font-size: clamp(16px,3vw,24px);
+            font-size: clamp(20px,3vw,24px);
         }
        }
         
